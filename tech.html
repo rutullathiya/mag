@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style >
+		*{margin: 0;padding: 0;font-family: calibri}
+     body{margin: 0px}
+.date-time{height: 30px;width: 100%;background:black ;margin-top: 0px;padding-top: 7.5px}
+.date{height: 35px;width: 100px;color: white;float: left;margin-left: 90px;}
+.location{height: 40px;width: 200px;color: white;float: left;margin-left: 20px;}
+.social-icon{height: 40px;width: 100px;color: white;float: left;margin-left: 750px;}
+.a-li{color: white;float: left;margin-left: 20px;text-decoration: none}
+.logo-links{height: 100px;margin-left: 90px;margin-right: 90px; }
+.logo{height:70px;width:220px;float:left}
+.logo-image{height:55px;width:215px;margin-top: 0px}
+.links{height: 60px;margin-right: 0px;float: left;padding-top: 25px;}
+.links-list{margin-left: 30px;text-decoration: none;color: black;font-size: 16px;transition: 0.5s;font-weight: bold}
+.links-list:hover{color: red;transition: 0.5s;text-decoration: underline;}
+.h2-heading{margin-left: 90px}
+.hr-1{margin-left: 90px;margin-right: 90px;margin-top: 15px;border:1px solid #cacaca}
+.latest-news{height: 425px;margin-left: 60px;margin-right: 90px;margin-top: 30px}
+.latest-news-bar-1{height: 400px;width: 267.5px;float: left;background-image: url('images/tech/mostviewed1.jpg');background-size: cover;border: 1px solid black;margin-left: 30px;transition: 1s;overflow: hidden;}
+.latest-news-bar-1:hover{transform: scale(1.1);transition: 1s}
+.latest-news-bar-2{height: 400px;width: 267.5px;float: left;background-image: url('images/tech/mostviewed2.jpg');background-size: cover;border: 1px solid black;margin-left: 30px}
+.latest-news-bar-3{height: 400px;width: 267.5px;float: left;background-image: url('images/tech/mostviewed3.jpg');background-size: cover;border: 1px solid black;margin-left: 30px}
+.latest-news-bar-4{height: 400px;width: 267.5px;float: left;background-image: url('images/tech/mostviewed4.jpg');background-size: cover;border: 1px solid black;margin-left: 30px}
+.h3-latest-news-bar{padding-top: 325px;text-align: center;color: white;margin-bottom: 10px}
+.latest-pre{text-align: center;margin-top: 15px;color: white}
+.latest-news-bar-back{background:#00000099;height: 100%}
+.hr-latest-news{margin-left: 25px;margin-right: 25px;border: 1px solid #8a8a8a}
+.a-latest{text-decoration: none;color: white;transition: 0.5s}
+.a-latest:hover{color: red;transition: 0.5s;}
+.tech-conferences{height: 400px;margin: 30px 90px}
+.tech-conference-image{height: 380px;width: 569.5px;float:left;}
+.tech-stories{float: right}
+.tech-conference-story{height: 120px;width: 569.5px;float: right;margin-bottom: 20px}
+.tech-conference-story-image{height: 110px;width: 160px;float: left}
+.tech-conference-story-image-size{height: 110px;width: 160px}
+.tech-conference-story-detail{height: 110px;width: 400px;float:right;}
+.tech-conference-image-size{height: 400px;width: 570px}
+.a-conference-details{text-decoration: none;color: black;transition: 0.5s}
+.a-conference-details:hover{color: red;transition: 0.5s}
+.pre-tech-conference{margin-top: 10px}
+.hr-tech-detail{margin-top: 130px;}
+.blog-mag{height: 120px;margin: 10px 175px}
+.articles{height: 625px;margin: 30px 90px 0px 60px}
+.col-articles{height: 625px;width: 365px;float: left;margin-left: 30px}
+.articles-image{height: 230px;width: 330px;margin-left: 17.5px;margin-top: 20px}
+.h2-articles{margin-left: 17.5px;padding: 10px 0px}
+.a-h2-articles{color: black;transition: 0.5s;margin-left: 17.5px}
+.a-h2-articles:hover{color: red;transition: 0.5s}
+.articles-story{margin: 10px 0px 10px 10px}
+.updates{margin-left: 90px;margin-top: 30px;margin-right: 90px;height: 800px}
+.updates-image-1{height: 380px;width: 569.5px;float:left;transition: 1s}
+.updates-image-1:hover{transform: scale(1.1);transition: 1s}
+.updates-image-2{height: 380px;width: 569.50px;float:right;transition: 1s}
+.updates-image-2:hover{transform: scale(1.1);transition: 1s}
+.updates-story{height: 120px;width: 569.5px;}
+.updates-stories{height: 360px;width: 569.5px;float: left;margin-top: 20px}
+.updates-stories-right{height: 360px;width: 569.5px;float: right;margin-top: 20px}
+.updates-story-image{height: 110px;width: 160px;float: left}
+.updates-story-image-size{height: 110px;width: 160px}
+.updates-story-detail{height: 110px;width: 380px;float: left;margin-left: 20px}
+.tech-reviews{margin-left: 90px;margin-right: 90px;height: 600px;margin-top: 30px}
+.tech-reviews-left{float: left}
+.tech-reviews-left-top{height: 350px;width: 290px;background-image:url('images/tech/fashion2.jpg');background-size: cover}
+.reviews-back{background:#00000099;height: 100%}
+h3 a{text-decoration: none;color: white;transition: 0.5s;}
+h3 a:hover{color: red;transition: 0.5s}
+pre a{text-decoration: none;color: white;transition: 0.5s}
+pre a:hover{color: red;transition: 0.5s}
+.h3-center{text-align: center;margin-bottom: 5px}
+.pre-center{text-align: center}
+.tech-reviews-left-bottom{height: 220px;width: 290px;background-image:url('images/tech/fashion1.jpg');background-size: cover;margin-top: 5px}
+.tech-reviews-middle{float: left;margin-left: 5px}
+.tech-reviews-middle-top{height: 220px;width: 290px;background-image:url('images/tech/fashion4.jpg');background-size: cover}
+.tech-reviews-middle-bottom{height: 350px;width: 290px;background-image:url('images/tech/fashion3.jpg');background-size: cover;margin-top:5px}
+.tech-reviews-right{height: 575px;width: 579px;background-image:url('images/tech/fashion5.jpg');background-size: cover;float: left}
+.img-section{margin-left: 90px;margin-right: 90px;height: 800px;}
+.img-section-1{height: 525px;width: 775px;background-image: url('images/tech/gallery2.jpg');background-size: cover;float: left}
+.img-section-2{height: 260px;width: 385px;background-image: url('images/tech/gallery3.jpg');background-size: cover;float: left;margin-left: 5px}
+.img-section-3{height: 260px;width: 385px;background-image: url('images/tech/gallery4.jpg');background-size: cover;float: left;margin-left: 5px;margin-top: 5px}
+.img-section-4{height: 260px;width: 385px;background-image: url('images/tech/gallery5.jpg');background-size: cover;float: left;margin-top: 5px}
+.img-section-5{height: 260px;width: 385px;background-image: url('images/tech/gallery6.jpg');background-size: cover;float: left;margin-left: 5px;margin-top: 5px}
+.img-section-6{height: 260px;width: 385px;background-image: url('images/tech/gallery1.jpg');background-size: cover;float: left;margin-left: 5px;margin-top: 5px}
+.div-h-180{height: 180px}
+.div-h-250{height: 250px}
+.div-h-280{height: 280px}
+.div-h-80{height: 80px;}
+.div-h-150{height: 150px}
+.div-h-505{height: 505px}
+.soft-rev{margin-left: 90px;margin-right: 90px;height: 1200px;margin-top: 20px}
+.soft-rev-l{height: 1000px;width: 780px;float: left}
+.soft-rev-l-a-1{float: left;width: 380px;margin-top: 30px;margin-bottom: 20px}
+.soft-rev-l-a-2{float: left;width: 380px;margin-top: 30px;margin-left: 20px;margin-bottom: 20px}
+.soft-rev-image{height: 270px;width: 370px}
+.t-t-1{height: 355px;width: 237px;float: left;background-image: url('images/tech/mostviewed1.jpg');background-size: cover;border: 1px solid black;margin-top: 20px}
+.t-t-2{height: 355px;width: 237px;float: left;background-image: url('images/tech/mostviewed2.jpg');background-size: cover;border: 1px solid black;margin-top: 20px;margin-left: 30px}
+.t-t-3{height: 355px;width: 237px;float: left;background-image: url('images/tech/mostviewed3.jpg');background-size: cover;border: 1px solid black;margin-top: 20px;margin-left: 30px}
+
+.t-t-b-1{height: 270px;width: 370px;float: left;margin-top: 20px}
+.t-t-b-2{height: 270px;width: 370px;float: left;margin-top: 20px}
+.t-t-b-1-image{height: 100%;width: 100%}
+.t-t-b-2-s{margin-bottom: 20px;width: 370px;margin-top: 20px}
+.t-t-b-2-s-l{margin-bottom: 20px;width: 370px;margin-left: 20px}
+
+
+.soft-rev-r{height: 1000px;width: 350px;float: right;margin-top: 20px}
+.img-330-230{height: 230px;width: 330px;margin-top: 20px}
+.insta{height:32px;width:330px;background:#a9156e;font-size: 18px;padding-top: 10px;margin-top: 20px}
+.fb{height:32px;width:330px;background:#0000ff;font-size: 18px;padding-top: 10px;margin-top: 5px}
+.twitter{height:32px;width:330px;background:#1ab7fd;font-size: 18px;padding-top: 10px;margin-top: 5px}
+.a-button{text-decoration: none;font-size: 18px;color: black;margin-right: 11px;padding: 5px;transition: 0.5s}
+.a-button:hover{color: white;background: black;transition: 0.5s}
+.footer{background-image: url('images/tech/footerbg.jpg');height: 800px;background-size: cover;background-attachment: fixed}
+.footer-images{margin-left: 90px;margin-right: 90px;margin-top: 40px}
+.footer-img{height:195px;width:190px}
+.h3-white{color: white}
+.h2-white{color: white}
+.h2-center{text-align: center}
+.h2-white{color: white}
+.p-footer{color: #c4c4c4;margin-bottom: 15px;font-size: 18px}
+.a-footer{text-decoration: none;color:#c4c4c4;transition:0.5s }
+.a-footer:hover{color:red;transition:0.5s }
+.footer-column{margin: 0px 90px;margin-top: 20px;height: 250px}
+.footer-column-1{float: left;width: 380px}
+.footer-column-2{float: left;width: 190px;margin-left: 10px}
+.footer-column-3{float: left;width: 190px;}
+.footer-column-4{float: left;width: 380px;margin-left: 10px}
+.footer-a-li{color: white;text-decoration: none;margin-right: 20px}
+.hr-articles{margin-left:15px; border:1px solid #cacaca}
+.hr-90p{width: 80%;margin-left: 10%}
+.hr-2{margin-top: 15px;border:1px solid #cacaca}
+.p-cat {text-decoration: none;color: black;font-size: 18px;margin-top: 10px}
+.a-cat{text-decoration: none;color: black;transition: 0.5s}
+.a-cat:hover{color: red;transition: 0.5s}
+.so-li{margin-top: 20px}
+.hr-90p-r{width: 90%;margin-right: 10%;margin-top: 20px;margin-bottom: 20px;}
+.search{height: 30px;width: 300px;border-radius: 5px;placeholder: enter Email;}
+.mail{color:white;background:red;width:25px;height:22px;background: red;padding: 5px}
+.hr-50w{margin-left:500px;margin-right:500px;margin-top:10px;margin-bottom: 10px}
+.p-footer-center{color:white;text-align:center}
+.span-footer{color:red}
+
+</style>
+
+
+</head>
+<body>
+    <div class="date-time">
+          <div class="date">      
+          		<i class="fa fa-clock-o" aria-hidden="true"></i>
+          		2023-04-07
+          </div>
+          <div class="location">
+          	   <i class="fa fa-cloud" aria-hidden="true"></i>Bapunagar,Ahmedabad
+          </div>
+          <div class="social-icon">
+          	<a href=""class="a-li"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+          	<a href=""class="a-li"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+          	<a href=""class="a-li"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+          </div>
+    </div>
+    <div class="logo-links">
+    	<div class="logo">
+    		<img class="logo-image"src="images/logo1.png">
+    	</div>
+    	<div class="links">
+    		<a href="index.html"class="links-list">HOME</a>
+    		<a href="blog.html"class="links-list">BLOG</a>
+    		<a href="shoplist.html"class="links-list">SHOP LIST</a>
+    		<a href="account.html"class="links-list">ACCOUNT</a>
+    		<a href="cart.html"class="links-list">CART</a>
+    		<a href="checkout.html"class="links-list">CHECKOUT</a>
+    		<a href="tech.html"class="links-list">TECH</a>
+    		<a href="detail.html"class="links-list">DETAIL</a>
+    		<a href="about us.html"class="links-list">ABOUT US</a>
+    		<a href="contact us.html"class="links-list">CONTACT US</a>  
+    		<a href=""class="links-list"><i class="fa fa-search" aria-hidden="true"></i></a>    
+
+
+    	</div>
+    </div>
+   
+<h2 class="h2-heading">Latest News</h2>
+<hr class="hr-1">
+
+ 
+<div class="latest-news">
+     <div class="latest-news-bar-1">
+     	<div class="latest-news-bar-back">
+     	<h3 class="h3-latest-news-bar"><a class="a-latest"href="">Android Phones Demand</a></h3>
+     	<hr class=hr-latest-news>
+     	<pre class="latest-pre"><i class="fa fa-user" aria-hidden="true"></i> <a class="a-latest" href="">John Doe</a>  <i class="fa fa-clock-o" aria-hidden="true"></i> 12May</pre>
+     </div>     	    
+     </div>
+     <div class="latest-news-bar-2">
+     	<div class="latest-news-bar-back">
+     	<h3 class="h3-latest-news-bar"><a class="a-latest" href="">Apple Watch Battery Life</a></h3>
+     	<hr class=hr-latest-news>
+     	<pre class="latest-pre"><i class="fa fa-user" aria-hidden="true"></i> <a class="a-latest" href="">John Doe</a>  <i class="fa fa-clock-o" aria-hidden="true"></i> 12May</pre>
+     </div>     	    
+     </div>
+     <div class="latest-news-bar-3">
+     	<div class="latest-news-bar-back">
+     	<h3 class="h3-latest-news-bar"><a class="a-latest" href="">The Iphone of Drones</a></h3>
+     	<hr class=hr-latest-news>
+     	<pre class="latest-pre"><i class="fa fa-user" aria-hidden="true"></i> <a class="a-latest" href="">John Doe</a>  <i class="fa fa-clock-o" aria-hidden="true"></i> 12May</pre>
+     </div>     	    
+     </div>
+     <div class="latest-news-bar-4">
+     	<div class="latest-news-bar-back">
+     	<h3 class="h3-latest-news-bar"><a class="a-latest" href="">NASA building rockets</a></h3>
+     	<hr class=hr-latest-news>
+     	<pre class="latest-pre"><i class="fa fa-user" aria-hidden="true"></i> <a class="a-latest" href="">John Doe</a>  <i class="fa fa-clock-o" aria-hidden="true"></i> 12May</pre>
+     </div>     	    
+     </div>
+     
+</div> 
+<h2 class="h2-heading">Tech Conferences</h2>
+<hr class="hr-1">
+
+<div class="tech-conferences">
+	<div class="tech-conference-image">
+		<img class="tech-conference-image-size"src="images/tech/trending3.jpg">
+	</div>
+	<div class="tech-stories">
+	<div class="tech-conference-story">
+		<div class="tech-conference-story-image">
+			<img class="tech-conference-story-image-size"src="images/tech/small4.jpg">
+			</div>
+		<div class="tech-conference-story-detail">
+          <h3><a class="a-conference-details"href="">Advance Uber’s mission of bringing safe, reliable transportation to everyone</a></h3>
+          <pre class="pre-tech-conference"> <i class="fa fa-user" aria-hidden="true"></i>  <a class="a-conference-details"href="">John Doe</a>   <i class="fa fa-clock-o" aria-hidden="true"></i>12 May <a class="a-conference-details"href="">  <i class="fa fa-commenting-o" aria-hidden="true"></i>5 comments</a></pre>
+		</div>
+	</div>
+	<hr>
+
+	<div class="tech-conference-story">
+		<div class="tech-conference-story-image">
+			<img class="tech-conference-story-image-size"src="images/tech/small5.jpg">
+			</div>
+		<div class="tech-conference-story-detail">
+          <h3><a class="a-conference-details"href="">VR and playable on a console makes it a great option to PC related VR headsets</a></h3>
+          <pre class="pre-tech-conference"> <i class="fa fa-user" aria-hidden="true"></i>  <a class="a-conference-details"href="">John Doe</a>   <i class="fa fa-clock-o" aria-hidden="true"></i>12 May <a class="a-conference-details"href="">  <i class="fa fa-commenting-o" aria-hidden="true"></i>5 comments</a></pre>
+		</div>
+	</div>
+	<hr>
+	<div class="tech-conference-story">
+		<div class="tech-conference-story-image">
+			<img class="tech-conference-story-image-size"src="images/tech/small6.jpg">
+			</div>
+		<div class="tech-conference-story-detail">
+          <h3><a class="a-conference-details"href="">Satelite cost tens of millions or even hundreds of millions of dollars to build</a></h3>
+          <pre class="pre-tech-conference"> <i class="fa fa-user" aria-hidden="true"></i>  <a class="a-conference-details"href="">John Doe</a>   <i class="fa fa-clock-o" aria-hidden="true"></i>12 May <a class="a-conference-details"href="">  <i class="fa fa-commenting-o" aria-hidden="true"></i>5 comments</a></pre>
+		</div>
+	</div>
+
+
+</div>
+	
+</div>
+
+<img class="blog-mag"src="images/pd1.jpg">
+
+<div class="articles">
+	<div class="col-articles">
+	    <h2 class="h2-articles">Apple News</h2>
+	    <hr class="hr-articles">
+	    <img class="articles-image"src="images/tech/trending1.jpg"><br>    
+    
+    <div class="articles-story">
+          <h3><a class="a-conference-details"href="">Check Out This Video of Apple's New Futuristic Campus, Shot by a Drone</a></h3>
+          <pre class="pre-tech-conference"> <i class="fa fa-user" aria-hidden="true"></i>  <a class="a-conference-details"href="">John Doe</a>   <i class="fa fa-clock-o" aria-hidden="true"></i>12 May <a class="a-conference-details"href="">  <i class="fa fa-commenting-o" aria-hidden="true"></i>2 comments</a></pre>
+		</div> 
+		<hr class="hr-articles">
+		<div class="articles-story">
+          <h3><a class="a-conference-details"href="">How to get better Apple Watch battery life</a></h3>
+          <pre class="pre-tech-conference"> <i class="fa fa-user" aria-hidden="true"></i>  <a class="a-conference-details"href="">John Doe</a>   <i class="fa fa-clock-o" aria-hidden="true"></i>12 May <a class="a-conference-details"href="">  <i class="fa fa-commenting-o" aria-hidden="true"></i>2 comments</a></pre>
+		</div> 
+		<hr class="hr-articles">
+		<div class="articles-story">
+          <h3><a class="a-conference-details"href="">Satelite cost tens of millions or even hundreds of millions of dollars to build</a></h3>
+          <pre class="pre-tech-conference"> <i class="fa fa-user" aria-hidden="true"></i>  <a class="a-conference-details"href="">John Doe</a>   <i class="fa fa-clock-o" aria-hidden="true"></i>12 May <a class="a-conference-details"href="">  <i class="fa fa-commenting-o" aria-hidden="true"></i>2 comments</a></pre>
+		</div> 
+		</div> 
+		<div class="col-articles">
+	    <h2 class="h2-articles">Latest Devices</h2>
+	    <hr class="hr-articles">
+	    <img class="articles-image"src="images/tech/trending2.jpg"><br>    
+    
+    <div class="articles-story">
+          <h3><a class="a-conference-details"href="">Satelite cost tens of millions or even hundreds of millions of dollars to build</a></h3>
+          <pre class="pre-tech-conference"> <i class="fa fa-user" aria-hidden="true"></i>  <a class="a-conference-details"href="">John Doe</a>   <i class="fa fa-clock-o" aria-hidden="true"></i>12 May <a class="a-conference-details"href="">  <i class="fa fa-commenting-o" aria-hidden="true"></i>2 comments</a></pre>
+		</div> 
+		<hr class="hr-articles">
+		<div class="articles-story">
+          <h3><a class="a-conference-details"href="">Advance Uber’s mission of bringing safe, reliable transportation to everyone</a></h3>
+          <pre class="pre-tech-conference"> <i class="fa fa-user" aria-hidden="true"></i>  <a class="a-conference-details"href="">John Doe</a>   <i class="fa fa-clock-o" aria-hidden="true"></i>12 May <a class="a-conference-details"href="">  <i class="fa fa-commenting-o" aria-hidden="true"></i>2 comments</a></pre>
+		</div> 
+		<hr>
+		<div class="articles-story">
+          <h3><a class="a-conference-details"href="">VR and playable on a console makes it a great option to PC related VR headsets</a></h3>
+          <pre class="pre-tech-conference"> <i class="fa fa-user" aria-hidden="true"></i>  <a class="a-conference-details"href="">John Doe</a>   <i class="fa fa-clock-o" aria-hidden="true"></i>12 May <a class="a-conference-details"href="">  <i class="fa fa-commenting-o" aria-hidden="true"></i>2 comments</a></pre>
+		</div> 
+		</div>  
+		<div class="col-articles">
+	    <h2 class="h2-articles">Tips and Tricks</h2>
+	    <hr class="hr-articles">
+	    <img class="articles-image"src="images/tech/trending3.jpg"><br>    
+    
+    <div class="articles-story">
+          <h3><a class="a-conference-details"href="">VR and playable on a console makes it a great option to PC related VR headsets</a></h3>
+          <pre class="pre-tech-conference"> <i class="fa fa-user" aria-hidden="true"></i>  <a class="a-conference-details"href="">John Doe</a>   <i class="fa fa-clock-o" aria-hidden="true"></i>12 May <a class="a-conference-details"href="">  <i class="fa fa-commenting-o" aria-hidden="true"></i>2 comments</a></pre>
+		</div> 
+		<hr class="hr-articles">
+		<div class="articles-story">
+          <h3><a class="a-conference-details"href="">NASA is best known for building rockets and spacecraft</a></h3>
+          <pre class="pre-tech-conference"> <i class="fa fa-user" aria-hidden="true"></i>  <a class="a-conference-details"href="">John Doe</a>   <i class="fa fa-clock-o" aria-hidden="true"></i>12 May <a class="a-conference-details"href="">  <i class="fa fa-commenting-o" aria-hidden="true"></i>2 comments</a></pre>
+		</div> 
+		<hr class="hr-articles">
+		<div class="articles-story">
+          <h3><a class="a-conference-details"href="">Digital cameras are always changing, adding new features</a></h3>
+          <pre class="pre-tech-conference"> <i class="fa fa-user" aria-hidden="true"></i>  <a class="a-conference-details"href="">John Doe</a>   <i class="fa fa-clock-o" aria-hidden="true"></i>12 May <a class="a-conference-details"href="">  <i class="fa fa-commenting-o" aria-hidden="true"></i>2 comments</a></pre>
+		</div> 
+		</div>   
+</div>
+<h2 class="h2-heading">Tech Reviews</h2>
+<hr class="hr-1">
+<div class="tech-reviews">
+     <div class="tech-reviews-left">
+     	<div class="tech-reviews-left-top">
+     		<div class="reviews-back">
+     			<div class="div-h-280"></div>
+                   <h3 class="h3-center"><a class=""href="">4th Gen iPod</a></h3>
+                   <hr class="hr-90p">
+                   <pre class="latest-pre"><i class="fa fa-user" aria-hidden="true"></i> <a class="a-latest" href="">John Doe</a>  <i class="fa fa-clock-o" aria-hidden="true"></i> 12May</pre>
+     		</div>
+     	</div>
+     	<div class="tech-reviews-left-bottom">
+     		<div class="reviews-back">
+     			<div class="div-h-150"></div>
+                   <h3 class="h3-center"><a class=""href="">Wireless Optical Moused</a></h3>
+                   <hr class="hr-90p">
+                   <pre class="latest-pre"><i class="fa fa-user" aria-hidden="true"></i> <a class="a-latest" href="">John Doe</a>  <i class="fa fa-clock-o" aria-hidden="true"></i> 12May</pre>
+     		</div>
+     	</div>
+     </div>
+     <div class="tech-reviews-middle">
+     	<div class="tech-reviews-middle-top">
+     		<div class="reviews-back">
+     			<div class="div-h-150"></div>
+                   <h3 class="h3-center"><a class=""href="">All-New Kindle E-reader</a></h3>
+                   <hr class="hr-90p">
+                   <pre class="latest-pre"><i class="fa fa-user" aria-hidden="true"></i> <a class="a-latest" href="">John Doe</a>  <i class="fa fa-clock-o" aria-hidden="true"></i> 12May</pre>
+     		</div>
+     	</div>
+     	<div class="tech-reviews-middle-bottom">
+     		<div class="reviews-back">
+     			<div class="div-h-280"></div>
+                   <h3 class="h3-center"><a class=""href="">Lens for Canon Dslr</a></h3>
+                   <hr class="hr-90p">
+                   <pre class="latest-pre"><i class="fa fa-user" aria-hidden="true"></i> <a class="a-latest" href="">John Doe</a>  <i class="fa fa-clock-o" aria-hidden="true"></i> 12May</pre>
+     		</div>
+     	</div>
+     </div>
+     <div class="tech-reviews-middle">
+     	<div class="tech-reviews-right">
+     		<div class="reviews-back">
+     			<div class="div-h-505"></div>
+                   <h3 class="h3-center"><a class=""href="">Sony Smartphones Specifications and Overviewss</a></h3>
+                   <hr class="hr-90p">
+                   <pre class="latest-pre"><i class="fa fa-user" aria-hidden="true"></i> <a class="a-latest" href="">John Doe</a>  <i class="fa fa-clock-o" aria-hidden="true"></i> 12May</pre>
+     		</div>
+     	</div>
+        </div>
+</div>
+
+<h2 class="h2-heading">Latest Updates</h2>
+<hr class="hr-1">
+<div class="updates">
+      <img src="images/tech/trending1.jpg"class="updates-image-1">
+      <img src="images/tech/trending2.jpg"class="updates-image-2">
+<div class="updates-stories">
+
+      <div class="updates-story">
+		<div class="updates-story-image">
+			<img class="updates-story-image-size"src="images/tech/small4.jpg">
+			</div>
+		<div class="updates-story-detail">
+          <h3><a class="a-conference-details"href="">Advance Uber’s mission of bringing safe, reliable transportation to everyone</a></h3>
+          <pre class="pre-tech-conference"> <i class="fa fa-user" aria-hidden="true"></i>  <a class="a-conference-details"href="">John Doe</a>   <i class="fa fa-clock-o" aria-hidden="true"></i>12 May <a class="a-conference-details"href="">  <i class="fa fa-commenting-o" aria-hidden="true"></i>5 comments</a></pre>
+		</div>
+
+	</div>
+	<hr style="margin-bottom:10px">
+	<div class="updates-story">
+		<div class="updates-story-image">
+			<img class="updates-story-image-size"src="images/tech/small5.jpg">
+			</div>
+		<div class="updates-story-detail">
+          <h3><a class="a-conference-details"href="">VR and playable on a console makes it a great option to PC related VR headsets</a></h3>
+          <pre class="pre-tech-conference"> <i class="fa fa-user" aria-hidden="true"></i>  <a class="a-conference-details"href="">John Doe</a>   <i class="fa fa-clock-o" aria-hidden="true"></i>12 May <a class="a-conference-details"href="">  <i class="fa fa-commenting-o" aria-hidden="true"></i>5 comments</a></pre>
+		</div>
+	</div>
+	<hr style="margin-bottom:10px">
+	<div class="updates-story">
+		<div class="updates-story-image">
+			<img class="updates-story-image-size"src="images/tech/small6.jpg">
+			</div>
+		<div class="updates-story-detail">
+          <h3><a class="a-conference-details"href="">
+Satelite cost tens of millions or even hundreds of millions of dollars to build</a></h3>
+          <pre class="pre-tech-conference"> <i class="fa fa-user" aria-hidden="true"></i>  <a class="a-conference-details"href="">John Doe</a>   <i class="fa fa-clock-o" aria-hidden="true"></i>12 May <a class="a-conference-details"href="">  <i class="fa fa-commenting-o" aria-hidden="true"></i>5 comments</a></pre>
+		</div>
+	</div>
+</div>
+<div class="updates-stories-right">
+
+      <div class="updates-story">
+		<div class="updates-story-image">
+			<img class="updates-story-image-size"src="images/tech/small1.jpg">
+			</div>
+		<div class="updates-story-detail">
+          <h3><a class="a-conference-details"href="">Satelite cost tens of millions or even hundreds of millions of dollars to build</a></h3>
+          <pre class="pre-tech-conference"> <i class="fa fa-user" aria-hidden="true"></i>  <a class="a-conference-details"href="">John Doe</a>   <i class="fa fa-clock-o" aria-hidden="true"></i>12 May <a class="a-conference-details"href="">  <i class="fa fa-commenting-o" aria-hidden="true"></i>5 comments</a></pre>
+		</div>
+	</div>
+	<hr style="margin-bottom:10px">
+	<div class="updates-story">
+		<div class="updates-story-image">
+			<img class="updates-story-image-size"src="images/tech/small2.jpg">
+			</div>
+		<div class="updates-story-detail">
+          <h3><a class="a-conference-details"href="">Advance Uber’s mission of bringing safe, reliable transportation to everyone</a></h3>
+          <pre class="pre-tech-conference"> <i class="fa fa-user" aria-hidden="true"></i>  <a class="a-conference-details"href="">John Doe</a>   <i class="fa fa-clock-o" aria-hidden="true"></i>12 May <a class="a-conference-details"href="">  <i class="fa fa-commenting-o" aria-hidden="true"></i>5 comments</a></pre>
+		</div>
+	</div>
+	<hr style="margin-bottom:10px">
+	<div class="updates-story">
+		<div class="updates-story-image">
+			<img class="updates-story-image-size"src="images/tech/small3.jpg">
+			</div>
+		<div class="updates-story-detail">
+          <h3><a class="a-conference-details"href="">VR and playable on a console makes it a great option to PC related VR headsets</a></h3>
+          <pre class="pre-tech-conference"> <i class="fa fa-user" aria-hidden="true"></i>  <a class="a-conference-details"href="">John Doe</a>   <i class="fa fa-clock-o" aria-hidden="true"></i>12 May <a class="a-conference-details"href="">  <i class="fa fa-commenting-o" aria-hidden="true"></i>5 comments</a></pre>
+		</div>
+	</div>
+</div>
+</div>
+<div class="img-section">
+	<div class="img-section-1">
+		<div class="reviews-back">
+			<div class="div-h-250"></div>
+			<h3 class="h3-center"><a href="">Top New Gadgets</a></h3>
+			<pre class="latest-pre"><i class="fa fa-user" aria-hidden="true"></i> <a class="a-latest" href="">John Doe</a>  <i class="fa fa-clock-o" aria-hidden="true"></i> 12May <a class="a-latest"href="">  <i class="fa fa-commenting-o" aria-hidden="true"></i>5 comments</a> </pre>
+		</div>
+	</div>
+	<div class="img-section-2">
+		<div class="reviews-back">
+			<div class="div-h-180"></div>
+			<h3 class="h3-center"><a href="">Get better Apple Watch battery life</a></h3>
+			<pre class="latest-pre"><i class="fa fa-user" aria-hidden="true"></i> <a class="a-latest" href="">John Doe</a>  <i class="fa fa-clock-o" aria-hidden="true"></i> 12May <a class="a-latest"href="">  <i class="fa fa-commenting-o" aria-hidden="true"></i>5 comments</a> </pre>
+		</div>
+	</div>
+	<div class="img-section-3">
+		<div class="reviews-back">
+			<div class="div-h-180"></div>
+			<h3 class="h3-center"><a href="">Digital cameras are always changing</a></h3>
+			<pre class="latest-pre"><i class="fa fa-user" aria-hidden="true"></i> <a class="a-latest" href="">John Doe</a>  <i class="fa fa-clock-o" aria-hidden="true"></i> 12May <a class="a-latest"href="">  <i class="fa fa-commenting-o" aria-hidden="true"></i>5 comments</a> </pre>
+		</div>
+	</div>
+	<div class="img-section-4">
+		<div class="reviews-back">
+			<div class="div-h-180"></div>
+			<h3 class="h3-center"><a href="">NASA is best known</a></h3>
+			<pre class="latest-pre"><i class="fa fa-user" aria-hidden="true"></i> <a class="a-latest" href="">John Doe</a>  <i class="fa fa-clock-o" aria-hidden="true"></i> 12May <a class="a-latest"href="">  <i class="fa fa-commenting-o" aria-hidden="true"></i>5 comments</a> </pre>
+		</div>
+	</div>
+	<div class="img-section-5">
+		<div class="reviews-back">
+			<div class="div-h-180"></div>
+			<h3 class="h3-center"><a href="">Satelite cost millions of dollars</a></h3>
+			<pre class="latest-pre"><i class="fa fa-user" aria-hidden="true"></i> <a class="a-latest" href="">John Doe</a>  <i class="fa fa-clock-o" aria-hidden="true"></i> 12May <a class="a-latest"href="">  <i class="fa fa-commenting-o" aria-hidden="true"></i>5 comments</a> </pre>
+		</div>
+	</div>
+	<div class="img-section-6">
+		<div class="reviews-back">
+			<div class="div-h-180"></div>
+			<h3 class="h3-center"><a href="">VR and playable on a console</a></h3>
+			<pre class="latest-pre"><i class="fa fa-user" aria-hidden="true"></i> <a class="a-latest" href="">John Doe</a>  <i class="fa fa-clock-o" aria-hidden="true"></i> 12May <a class="a-latest"href="">  <i class="fa fa-commenting-o" aria-hidden="true"></i>5 comments</a> </pre>
+		</div>
+	</div>
+</div>
+
+<div class="soft-rev">
+    <div class="soft-rev-l">
+    	<h2>Softwares and Reviews</h2>
+         <hr class="hr-2">  
+         <div class=soft-rev-l-a >
+         	<div class="soft-rev-l-a-1">
+         		<img src="images/tech/trending2.jpg"class="soft-rev-image">
+         		<h3><a class="a-conference-details"href="">Why virtual reality ‘could be the future’ for Portsmouth entertainment</a></h3>
+          <pre class="pre-tech-conference"> <i class="fa fa-user" aria-hidden="true"></i>  <a class="a-conference-details"href="">John Doe</a>   <i class="fa fa-clock-o" aria-hidden="true"></i>12 May <a class="a-conference-details"href="">  <i class="fa fa-commenting-o" aria-hidden="true"></i>2 comments</a></pre>
+         	</div>
+         	<div class="soft-rev-l-a-2">
+         		<img src="images/tech/trending3.jpg"class="soft-rev-image">
+         		<h3><a class="a-conference-details"href="">Google Project Fi Review: My Time With Google’s Telco Was A Disaster</a></h3>
+          <pre class="pre-tech-conference"> <i class="fa fa-user" aria-hidden="true"></i>  <a class="a-conference-details"href="">John Doe</a>   <i class="fa fa-clock-o" aria-hidden="true"></i>12 May <a class="a-conference-details"href="">  <i class="fa fa-commenting-o" aria-hidden="true"></i>2 comments</a></pre>
+         	</div>
+         </div>	
+         <h2>Tips and Tricks</h2>
+         <hr class="hr-2">
+         <div>
+         <div class="t-t-1">
+     	<div class="latest-news-bar-back">
+     		<div class="div-h-280"></div>
+     	<h3 class="h3-center"><a class="a-latest"href="">Better Battery life</a></h3>
+     	<hr class=hr-latest-news>
+     	<pre class="latest-pre"><i class="fa fa-user" aria-hidden="true"></i> <a class="a-latest" href="">John Doe</a>  <i class="fa fa-clock-o" aria-hidden="true"></i> 12May</pre>
+     </div>     	    
+     </div>
+     <div class="t-t-2">
+     	<div class="latest-news-bar-back">
+     		<div class="div-h-280"></div>
+     	<h3 class="h3-center"><a class="a-latest"href="">Digital Cameras</a></h3>
+     	<hr class=hr-latest-news>
+     	<pre class="latest-pre"><i class="fa fa-user" aria-hidden="true"></i> <a class="a-latest" href="">John Doe</a>  <i class="fa fa-clock-o" aria-hidden="true"></i> 12May</pre>
+     </div>     	    
+     </div>
+     <div class="t-t-3">
+     	<div class="latest-news-bar-back">
+     		<div class="div-h-280"></div>
+     	<h3 class="h3-center"><a class="a-latest"href="">Optical Mouse</a></h3>
+     	<hr class=hr-latest-news>
+     	<pre class="latest-pre"><i class="fa fa-user" aria-hidden="true"></i> <a class="a-latest" href="">John Doe</a>  <i class="fa fa-clock-o" aria-hidden="true"></i> 12May</pre>
+     </div>     	    
+     </div>
+     </div>
+   <div class="t-t-b">
+   	<div class="t-t-b-1">
+   		<img src="images/tech/trending7.jpg"class="t-t-b-1-image">
+   	</div>
+   	<div class="t-t-b-2">
+   		<div class="t-t-b-2-s-l">
+          <h3><a class="a-conference-details"href="">Advance Uber’s mission of bringing safe, reliable transportation to everyone</a></h3>
+          <pre class="pre-tech-conference"> <i class="fa fa-user" aria-hidden="true"></i>  <a class="a-conference-details"href="">John Doe</a>   <i class="fa fa-clock-o" aria-hidden="true"></i>12 May <a class="a-conference-details"href="">  <i class="fa fa-commenting-o" aria-hidden="true"></i>5 comments</a></pre>
+		</div>
+		<hr class="hr-2">
+		<div class="t-t-b-2-s-l">
+          <h3><a class="a-conference-details"href="">VR and playable on a console makes it a great option to PC related VR headsets</a></h3>
+          <pre class="pre-tech-conference"> <i class="fa fa-user" aria-hidden="true"></i>  <a class="a-conference-details"href="">John Doe</a>   <i class="fa fa-clock-o" aria-hidden="true"></i>12 May <a class="a-conference-details"href="">  <i class="fa fa-commenting-o" aria-hidden="true"></i>5 comments</a></pre>
+		</div>
+		<hr class="hr-2">
+		<div class="t-t-b-2-s-l">
+          <h3><a class="a-conference-details"href="">Satelite cost tens of millions or even hundreds of millions of dollars</a></h3>
+          <pre class="pre-tech-conference"> <i class="fa fa-user" aria-hidden="true"></i>  <a class="a-conference-details"href="">John Doe</a>   <i class="fa fa-clock-o" aria-hidden="true"></i>12 May <a class="a-conference-details"href="">  <i class="fa fa-commenting-o" aria-hidden="true"></i>5 comments</a></pre>
+		</div>
+
+   	</div>
+   </div>
+    </div>
+
+    <div class="soft-rev-r">
+    	<div>
+    		<a href=""class="a-button"><i class="fa fa-heart-o" aria-hidden="true"></i> Gadegets</a>
+    		<a href=""class="a-button"><i class="fa fa-tasks" aria-hidden="true"></i> Softwares</a>
+    		<a href=""class="a-button"><i class="fa fa-wrench" aria-hidden="true"></i> Updates</a>
+    		
+    	</div>
+        <img src="images/tech/trending1.jpg"class="img-330-230">
+        <div class="t-t-b-2-s">
+          <h3><a class="a-conference-details"href="">Advance Uber’s mission of bringing safe, reliable transportation to everyone</a></h3>
+          <pre class="pre-tech-conference"> <i class="fa fa-user" aria-hidden="true"></i>  <a class="a-conference-details"href="">John Doe</a>   <i class="fa fa-clock-o" aria-hidden="true"></i>12 May <a class="a-conference-details"href="">  <i class="fa fa-commenting-o" aria-hidden="true"></i>5 comments</a></pre>
+		</div>
+		<hr class="hr-2">
+		<div class="t-t-b-2-s">
+          <h3><a class="a-conference-details"href="">VR and playable on a console makes it a great option to PC related VR headsets</a></h3>
+          <pre class="pre-tech-conference"> <i class="fa fa-user" aria-hidden="true"></i>  <a class="a-conference-details"href="">John Doe</a>   <i class="fa fa-clock-o" aria-hidden="true"></i>12 May <a class="a-conference-details"href="">  <i class="fa fa-commenting-o" aria-hidden="true"></i>5 comments</a></pre>
+		</div>
+		<hr class="hr-2">
+		<div class="t-t-b-2-s">
+          <h3><a class="a-conference-details"href="">Satelite cost tens of millions or even hundreds of millions of dollars to build</a></h3>
+          <pre class="pre-tech-conference"> <i class="fa fa-user" aria-hidden="true"></i>  <a class="a-conference-details"href="">John Doe</a>   <i class="fa fa-clock-o" aria-hidden="true"></i>12 May <a class="a-conference-details"href="">  <i class="fa fa-commenting-o" aria-hidden="true"></i>5 comments</a></pre>
+		</div>
+		<div class="cat">
+			<h2>Categories</h2>
+			<hr class="hr-2">
+			<p class="p-cat"><a href=""class="a-cat">Android</a></p><hr class="hr-2">
+			<p class="p-cat"><a href=""class="a-cat">Apple</a></p><hr class="hr-2">
+			<p class="p-cat"><a href=""class="a-cat">Artificial Intelligence</a></p><hr class="hr-2">
+			<p class="p-cat"><a href=""class="a-cat">Virtual Reality</a></p><hr class="hr-2">
+			<p class="p-cat"><a href=""class="a-cat">Virtual Reality</a></p><hr class="hr-2">
+		</div>
+		<div class="so-li">
+		<h2>Stay Connected</h2>
+		<hr>
+		<pre class="insta"><a href="">     <i class="fa fa-instagram" aria-hidden="true"></i>                                                  FOLLOW </a></pre>
+		<pre class="fb"><a href="">     <i class="fa fa-facebook" aria-hidden="true"></i>                                                            LIKE </a></pre>
+		<pre class="twitter"><a href="">     <i class="fa fa-twitter" aria-hidden="true"></i>                                                  FOLLOW </a></pre>	       	
+        </div>
+    </div>
+</div>
+<div class="footer">
+	<div class="div-h-80"></div>
+    <h2 class="h2-center h2-white">Find Us on Instagram</h2>
+    <hr class="hr-90p">
+    <div class="footer-images">
+    	    <a href=""><img src="images/footer2.jpg" class="footer-img"></a>
+            <a href=""><img src="images/footer1.jpg"class="footer-img"></a>
+            <a href=""><img src="images/footer3.jpg"class="footer-img"></a>
+            <a href=""><img src="images/footer4.jpg"class="footer-img"></a>
+            <a href=""><img src="images/footer2.jpg" class="footer-img"></a>
+            <a href=""><img src="images/footer3.jpg"class="footer-img"></a>
+     </div>
+    
+    <div class="footer-column">
+        <div class="footer-column-1">
+        	<h2 class="h2-white">NewMag</h2>
+        	<hr class="hr-90p-r">
+        	<p class="p-footer">amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.</p>
+        	<div>
+          	<a href=""class="footer-a-li"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+          	<a href=""class="footer-a-li"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+          	<a href=""class="footer-a-li"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+          </div>
+        </div>	
+
+        <div class="footer-column-2">
+        	<h2 class="h2-white">Categories</h2>
+        	<hr class="hr-90p-r">
+        	<p class="p-footer"><a href=""class="a-footer">Entertainment</a></p>
+        	<p class="p-footer"><a href=""class="a-footer">Sports</a></p>
+        	<p class="p-footer"><a href=""class="a-footer">Polictics</a></p>
+        	<p class="p-footer"><a href=""class="a-footer">National</a></p>
+        	<p class="p-footer"><a href=""class="a-footer">Blog</a></p>       	
+        </div>	
+        <div class="footer-column-3">
+        	<h2 class="h2-white">Popular Tags</h2>
+        	<hr class="hr-90p-r">
+        	<p class="p-footer"><a href=""class="a-footer">Entertainment</a></p>
+        	<p class="p-footer"><a href=""class="a-footer">Sports</a></p>
+        	<p class="p-footer"><a href=""class="a-footer">Polictics</a></p>
+        	<p class="p-footer"><a href=""class="a-footer">National</a></p>
+        	<p class="p-footer"><a href=""class="a-footer">International</a></p>       	
+        </div>
+        <div class="footer-column-4">
+        	<h2 class="h2-white">Newsletter</h2>
+        	<hr class="hr-90p-r">
+        	<p class="p-footer">Dont Miss Anything</p>
+        	<p class="p-footer">Subscribe to our #newsletter</p>
+        	<input type="email"class="search"></input>	
+        	<i class="fa fa-paper-plane mail" aria-hidden="true"></i>
+        </div>
+    </div>
+
+
+          <hr class="hr-50w">
+             <p class="p-footer-center">Copyright © 2023 <span class="span-footer">Hi - Tech</span> - All Rights reserved</p>
+         <hr class="hr-50w">
+
+
+</div>
+</body>
+</html>
